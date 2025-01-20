@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harveymcarter.github.io/",
+  "homepage": ".",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@react-pdf/renderer": "^3.1.14",
