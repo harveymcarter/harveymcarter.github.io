@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -7,6 +7,10 @@ import { HiArrowLeft, HiCalendar, HiGlobeAlt, HiPlay, HiOutlineNewspaper } from 
 const MediaAppearance = () => {
   const { appearanceId } = useParams();
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [appearanceId]);
 
   const getAppearanceData = (id) => {
     const appearances = {

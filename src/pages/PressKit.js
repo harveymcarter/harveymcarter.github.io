@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -6,6 +6,10 @@ import { HiDownload, HiPhotograph, HiNewspaper, HiMicrophone, HiOutlineNewspaper
 
 const PressKit = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
