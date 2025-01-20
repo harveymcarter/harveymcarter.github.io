@@ -17,20 +17,22 @@ function App() {
   return (
     <Router>
       <LanguageProvider>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-white">
           <Navbar />
-          <main className="flex-grow pt-20">
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/articles" element={<Articles />} />
-              <Route path="/articles/:slug" element={<ArticleDetail />} />
-              <Route path="/press" element={<PressKit />} />
-              <Route path="/speaking" element={<Speaking />} />
-              <Route path="/speaking/recording/:eventId" element={<EventRecording />} />
-            </Routes>
+          <main className="flex-grow pt-16 sm:pt-20">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/articles" element={<Articles />} />
+                <Route path="/articles/:slug" element={<ArticleDetail />} />
+                <Route path="/press" element={<PressKit />} />
+                <Route path="/speaking" element={<Speaking />} />
+                <Route path="/speaking/recording/:eventId" element={<EventRecording />} />
+              </Routes>
+            </div>
           </main>
           <Footer />
         </div>
