@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
-import { HiArrowLeft, HiCalendar, HiGlobeAlt, HiPlay } from 'react-icons/hi';
+import { HiArrowLeft, HiCalendar, HiGlobeAlt, HiPlay, HiOutlineNewspaper } from 'react-icons/hi';
 
 const MediaAppearance = () => {
   const { appearanceId } = useParams();
@@ -54,49 +54,69 @@ const MediaAppearance = () => {
 
   return (
     <motion.div
-      className="container mx-auto px-4 py-8"
+      className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white via-media-paper to-white"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <Link
-        to="/press"
-        className="inline-flex items-center text-media-primary hover:text-media-primary-dark mb-6"
-      >
-        <HiArrowLeft className="mr-2" />
-        {t('press.backToPress')}
-      </Link>
+      <div className="max-w-7xl mx-auto px-4">
+        <Link
+          to="/press"
+          className="inline-flex items-center text-media-accent hover:text-media-ink transition-colors mb-8"
+        >
+          <HiArrowLeft className="mr-2 h-5 w-5" />
+          {t('press.backToPress')}
+        </Link>
 
-      <div className="bg-white rounded-xl shadow-sm border border-media-border p-6">
-        <h1 className="text-3xl font-bold text-media-ink mb-2">{appearance.title}</h1>
-        
-        <div className="flex flex-wrap gap-4 mb-6 text-media-muted">
-          <div className="flex items-center">
-            <HiGlobeAlt className="mr-2" />
-            {appearance.outlet}
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-2 rounded-lg bg-media-quote text-media-accent mb-6">
+            <HiOutlineNewspaper className="mr-2 h-5 w-5" />
+            <span className="text-sm font-medium tracking-wide">{t('speaking.recording.subtitle')}</span>
           </div>
-          <div className="flex items-center">
-            <HiCalendar className="mr-2" />
-            {appearance.date}
-          </div>
-          <div className="flex items-center">
-            <HiPlay className="mr-2" />
-            {appearance.type}
+          <h1 className="font-heading text-4xl md:text-5xl text-media-ink font-bold mb-6">
+            {appearance.title}
+          </h1>
+          
+          <div className="flex flex-wrap justify-center gap-6 text-media-muted">
+            <div className="flex items-center">
+              <HiGlobeAlt className="mr-2 h-5 w-5" />
+              {appearance.outlet}
+            </div>
+            <div className="flex items-center">
+              <HiCalendar className="mr-2 h-5 w-5" />
+              {appearance.date}
+            </div>
+            <div className="flex items-center">
+              <HiPlay className="mr-2 h-5 w-5" />
+              {appearance.type}
+            </div>
           </div>
         </div>
 
-        <div className="aspect-w-16 aspect-h-9 mb-6">
-          <iframe
-            src={appearance.videoUrl}
-            title={appearance.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-lg"
-          />
+        {/* Video Section */}
+        <div className="mb-12 max-w-5xl mx-auto">
+          <div className="aspect-w-16 aspect-h-9 bg-media-paper rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src={appearance.videoUrl}
+              title={appearance.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
         </div>
 
-        <div className="prose max-w-none">
-          <p className="text-media-ink">{appearance.description}</p>
+        {/* Description Section */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl shadow-sm border border-media-border p-8">
+            <h2 className="font-heading text-2xl text-media-ink font-bold mb-4">
+              {t('speaking.recording.aboutEvent')}
+            </h2>
+            <div className="prose max-w-none text-media-muted">
+              <p className="text-lg leading-relaxed">{appearance.description}</p>
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
