@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { HiDownload, HiPhotograph, HiNewspaper, HiMicrophone, HiOutlineNewspaper, HiArrowRight } from 'react-icons/hi';
 
@@ -60,14 +61,14 @@ const PressKit = () => {
       outlet: t('press.recentAppearance1.outlet'),
       date: t('press.recentAppearance1.date'),
       type: 'podcast',
-      link: '#'
+      id: 'digital-journalism-future'
     },
     {
       title: t('press.recentAppearance2.title'),
       outlet: t('press.recentAppearance2.outlet'),
       date: t('press.recentAppearance2.date'),
       type: 'article',
-      link: '#'
+      id: 'media-trends'
     }
   ];
 
@@ -161,15 +162,13 @@ const PressKit = () => {
                     <h3 className="font-heading text-xl text-media-ink font-bold mb-3">{appearance.title}</h3>
                     <p className="text-media-muted">{appearance.outlet}</p>
                     <p className="text-media-muted text-sm mb-6">{appearance.date}</p>
-                    <a
-                      href={appearance.link}
+                    <Link
+                      to={`/press/appearance/${appearance.id}`}
                       className="inline-flex items-center text-media-accent hover:text-media-ink transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <span className="mr-2">{t('press.viewAppearance')}</span>
                       <HiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
