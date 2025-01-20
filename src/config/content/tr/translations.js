@@ -108,6 +108,7 @@ export const translationsTr = {
   },
   about: {
     title: 'Hakkımda',
+    subtitle: 'Yolculuğum',
     downloadResume: 'CV İndir',
     professionalOverview: 'Profesyonel Genel Bakış',
     contact: 'İletişim',

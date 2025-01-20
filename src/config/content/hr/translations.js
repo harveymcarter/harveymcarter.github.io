@@ -26,6 +26,7 @@ export const translationsHr = {
   },
   about: {
     title: 'O meni',
+    subtitle: 'Moj put',
     downloadResume: 'Preuzmi životopis',
     professionalOverview: 'Profesionalni pregled',
     contact: 'Kontakt',
@@ -97,6 +98,7 @@ export const translationsHr = {
   },
   contact: {
     title: 'Kontaktirajte me',
+    subtitle: 'Povežimo se',
     description: 'Imate pitanja ili prijedloge? Pišite mi!',
     form: {
       name: 'Ime',

@@ -26,6 +26,7 @@ export const translationsRu = {
   },
   about: {
     title: 'Обо мне',
+    subtitle: 'Мой путь',
     downloadResume: 'Скачать резюме',
     professionalOverview: 'Профессиональный обзор',
     contact: 'Контакты',
@@ -97,6 +98,7 @@ export const translationsRu = {
   },
   contact: {
     title: 'Связаться со мной',
+    subtitle: 'Давайте общаться',
     description: 'Есть вопросы или предложения? Напишите мне!',
     form: {
       name: 'Имя',
