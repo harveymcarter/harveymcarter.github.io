@@ -67,7 +67,7 @@ export const translationsEn = {
     appearance1: {
       description: 'An in-depth discussion on emerging trends in digital journalism, focusing on AI integration, data-driven storytelling, and the future of news delivery.',
       type: 'Video Interview',
-      videoUrl: 'https://youtu.be/kQsJYN2ofE0'
+      videoUrl: 'https://www.youtube.com/embed/kQsJYN2ofE0'
     },
     appearance2: {
       description: 'Exploring the latest developments in media technology, audience engagement strategies, and the evolution of content consumption patterns.',

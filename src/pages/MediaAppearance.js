@@ -96,13 +96,14 @@ const MediaAppearance = () => {
 
         {/* Video Section */}
         <div className="mb-12 max-w-5xl mx-auto">
-          <div className="aspect-w-16 aspect-h-9 bg-media-paper rounded-xl overflow-hidden shadow-lg">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               src={appearance.videoUrl}
               title={appearance.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="w-full h-full"
+              className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
             />
           </div>
         </div>
