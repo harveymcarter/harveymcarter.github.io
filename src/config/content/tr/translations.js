@@ -55,14 +55,26 @@ export const translationsTr = {
       date: 'Mart 2024'
     },
     recentAppearance2: {
-      title: 'Medyada Yeni Trendler',
+      title: 'İstanbul Galata Üniversitesinde Erasmus+ Değişim Öğrencisi Olmak',
       outlet: 'Digital Today Dergisi',
       date: 'Şubat 2024'
     },
     viewAppearance: 'Görünümü İzle',
     contactTitle: 'Basın İletişim',
     contactDescription: 'Medya soruları ve röportaj talepleri için lütfen iletişime geçin.',
-    contactButton: 'Basın Ofisi ile İletişime Geç'
+    contactButton: 'Basın Ofisi ile İletişime Geç',
+    appearance1: {
+      description: 'Dijital gazetecilikteki yeni trendler, yapay zeka entegrasyonu, veri odaklı hikaye anlatımı ve haberciliğin geleceği üzerine derinlemesine bir tartışma.',
+      type: 'Video Röportaj',
+      videoUrl: 'https://youtu.be/kQsJYN2ofE0'
+    },
+    appearance2: {
+      description: 'Medya teknolojisindeki son gelişmeler, izleyici etkileşim stratejileri ve içerik tüketim alışkanlıklarının evrimi üzerine inceleme.',
+      type: 'Panel Tartışması',
+      videoUrl: 'https://www.youtube.com/embed/example2'
+    },
+    backToPress: 'Basın Kitine Dön',
+    watchAppearance: 'Görünümü İzle'
   },
   speaking: {
     title: 'Konuşma Etkinlikleri',

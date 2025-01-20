@@ -166,7 +166,19 @@ export const translationsBs = {
     viewAppearance: 'Pogledaj nastup',
     contactTitle: 'Kontakt za medije',
     contactDescription: 'Za medijske upite i zahtjeve za intervjue, molimo kontaktirajte nas.',
-    contactButton: 'Kontaktiraj press ured'
+    contactButton: 'Kontaktiraj press ured',
+    appearance1: {
+      description: 'Detaljna diskusija o novim trendovima u digitalnom novinarstvu, s fokusom na integraciju AI-ja, pripovijedanje zasnovano na podacima i budućnost dostave vijesti.',
+      type: 'Video intervju',
+      videoUrl: 'https://www.youtube.com/embed/example1'
+    },
+    appearance2: {
+      description: 'Istraživanje najnovijih razvoja u medijskoj tehnologiji, strategijama angažmana publike i evoluciji obrazaca konzumacije sadržaja.',
+      type: 'Panel diskusija',
+      videoUrl: 'https://www.youtube.com/embed/example2'
+    },
+    backToPress: 'Nazad na Press Kit',
+    watchAppearance: 'Pogledaj nastup'
   },
   speaking: {
     title: 'Javni nastupi',

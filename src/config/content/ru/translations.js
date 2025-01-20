@@ -166,7 +166,19 @@ export const translationsRu = {
     viewAppearance: 'Посмотреть выступление',
     contactTitle: 'Контакты для прессы',
     contactDescription: 'По вопросам СМИ и запросам на интервью, пожалуйста, свяжитесь с нами.',
-    contactButton: 'Связаться с пресс-службой'
+    contactButton: 'Связаться с пресс-службой',
+    appearance1: {
+      description: 'Глубокое обсуждение новых тенденций в цифровой журналистике, включая интеграцию ИИ, повествование на основе данных и будущее новостной индустрии.',
+      type: 'Видео-интервью',
+      videoUrl: 'https://www.youtube.com/embed/example1'
+    },
+    appearance2: {
+      description: 'Исследование последних разработок в медиа-технологиях, стратегиях взаимодействия с аудиторией и эволюции потребления контента.',
+      type: 'Панельная дискуссия',
+      videoUrl: 'https://www.youtube.com/embed/example2'
+    },
+    backToPress: 'Вернуться к пресс-киту',
+    watchAppearance: 'Смотреть выступление'
   },
   speaking: {
     title: 'Публичные выступления',

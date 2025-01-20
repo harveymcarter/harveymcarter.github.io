@@ -11,6 +11,7 @@ import ArticleDetail from './pages/ArticleDetail';
 import PressKit from './pages/PressKit';
 import Speaking from './pages/Speaking';
 import EventRecording from './pages/EventRecording';
+import MediaAppearance from './pages/MediaAppearance';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/press" element={<PressKit />} />
                 <Route path="/speaking" element={<Speaking />} />
                 <Route path="/speaking/recording/:eventId" element={<EventRecording />} />
+                <Route path="/press/appearance/:appearanceId" element={<MediaAppearance />} />
               </Routes>
             </div>
           </main>

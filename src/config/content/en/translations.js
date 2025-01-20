@@ -56,14 +56,26 @@ export const translationsEn = {
       date: 'March 2024'
     },
     recentAppearance2: {
-      title: 'Emerging Trends in Media',
+      title: 'Being an Erasmus+ ExchangeStudent at Istanbul Galata University',
       outlet: 'Digital Today Magazine',
       date: 'February 2024'
     },
     viewAppearance: 'View Appearance',
     contactTitle: 'Press Contact',
     contactDescription: 'For media inquiries and interview requests, please get in touch.',
-    contactButton: 'Contact Press Office'
+    contactButton: 'Contact Press Office',
+    appearance1: {
+      description: 'An in-depth discussion on emerging trends in digital journalism, focusing on AI integration, data-driven storytelling, and the future of news delivery.',
+      type: 'Video Interview',
+      videoUrl: 'https://youtu.be/kQsJYN2ofE0'
+    },
+    appearance2: {
+      description: 'Exploring the latest developments in media technology, audience engagement strategies, and the evolution of content consumption patterns.',
+      type: 'Panel Discussion',
+      videoUrl: 'https://www.youtube.com/embed/example2'
+    },
+    backToPress: 'Back to Press Kit',
+    watchAppearance: 'Watch Appearance'
   },
   speaking: {
     title: 'Speaking Engagements',
