@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:wght@400;600&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Source Serif Pro', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-media-paper text-media-ink;
+}
+
+@layer components {
+  .article-title {
+    @apply font-heading text-4xl md:text-5xl lg:text-6xl leading-tight
+           tracking-tight text-media-ink mb-6;
+  }
+  
+  .section-title {
+    @apply font-heading text-2xl md:text-3xl mb-6 text-media-ink
+           tracking-normal border-b border-media-border pb-4;
+  }
+  
+  .pull-quote {
+    @apply font-heading text-xl md:text-2xl italic text-media-ink
+           border-l-4 border-media-accent pl-6 my-8 max-w-2xl mx-auto;
+  }
+  
+  .highlight-box {
+    @apply bg-media-highlight p-6 rounded-sm my-6
+           border-l-4 border-media-accent;
+  }
+  
+  .media-button {
+    @apply px-6 py-3 bg-media-ink text-media-paper
+           hover:bg-media-accent transition-colors duration-300
+           font-sans text-sm font-medium tracking-wide;
+  }
+  
+  .media-button-outline {
+    @apply px-6 py-3 border border-media-ink text-media-ink
+           hover:bg-media-ink hover:text-media-paper transition-colors duration-300
+           font-sans text-sm font-medium tracking-wide;
+  }
+  
+  .article-card {
+    @apply bg-white p-6 border-b border-media-border
+           hover:bg-media-quote transition-colors duration-300;
+  }
+  
+  .article-meta {
+    @apply font-sans text-sm text-media-muted flex items-center gap-4;
+  }
+  
+  .newspaper-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .featured-article {
+    @apply col-span-full md:col-span-2 lg:col-span-3
+           grid md:grid-cols-2 gap-8 items-center;
+  }
+  
+  .article-content {
+    @apply prose prose-lg max-w-none
+           prose-headings:font-heading
+           prose-p:text-media-ink prose-p:leading-relaxed
+           prose-blockquote:font-heading prose-blockquote:text-xl
+           prose-blockquote:border-media-accent;
+  }
+} 
