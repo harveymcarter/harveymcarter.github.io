@@ -95,8 +95,8 @@ const Footer = () => {
           <p className="text-sm text-center text-media-muted">
             © {currentYear} Harvey M. Carter. All rights reserved.
           </p>
-          <p className="mt-2">
-              Made with passion in Ljubuški, Bosnia and Herzegovina
+          <p className="mt-2 text-sm text-center text-media-muted">
+            Made with passion in Ljubuški, Bosnia and Herzegovina
           </p>
         </div>
       </div>
